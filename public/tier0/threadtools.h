@@ -1,4 +1,4 @@
-//========== Copyright © 2005, Valve Corporation, All rights reserved. ========
+//========== Copyright ï¿½ 2005, Valve Corporation, All rights reserved. ========
 //
 // Purpose: A collection of utility classes to simplify thread handling, and
 //			as much as possible contain portability problems. Here avoiding 
@@ -1128,6 +1128,7 @@ protected:
 	virtual ThreadProc_t GetThreadProc();
 
 	CThreadMutex m_Lock;
+	CThreadEvent m_ExitEvent;	// Set right before the thread's function exits.
 
 private:
 	enum Flags
