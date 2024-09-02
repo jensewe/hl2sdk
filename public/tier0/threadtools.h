@@ -1120,7 +1120,7 @@ protected:
 
 #ifdef _WIN32
 	// Allow for custom start waiting
-	virtual bool WaitForCreateComplete( CThreadEvent *pEvent );
+	// virtual bool WaitForCreateComplete( CThreadEvent *pEvent );
 #endif
 
 	// "Virtual static" facility
